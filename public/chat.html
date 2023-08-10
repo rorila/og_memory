@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CoderDojo Linz | Chat Beispiel</title>
+    <style>
+        /* Globale Schriftart setzen (weniger "schnörkelig") */
+        body {
+            font-family: sans-serif;
+        }
+
+        /* Chat-Seite initial ausblenden */
+        .chat.page {
+            display: none;
+        }
+
+        /* Format für Benutzernamen bei der Ausgabe einer Chat-Nachricht */
+        .username {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Login-Seite -->
+    <div class="login page">
+        <h3 class="title">Wie ist dein Name?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+    </div>
+
+    <!-- Chat-Seite (initial ausgeblendet) -->
+    <div class="chat page">    
+        <!-- start-Button (dieser soll nur dann sichtbar sein, wenn sich der user angemeldet hat) -->
+        <button class="startButton">Start</button>
+        <button class="spreadButton">verteilen</button>
+        <h3 class="title">Was möchtest du allen anderen mitteilen?</h3>
+        <input class="inputMessage" placeholder="Type here..." />
+        <ul class="messages"></ul>
+     
+    </div>
+   
+
+    <!-- Programmcode auf der Client-Seite -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

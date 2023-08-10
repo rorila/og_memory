@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/a77586ad-7be5-43ec-b38f-7cadd0b6cffd/resourceGroups/memory4kids/providers/Microsoft.Web/sites/memory4kids",
+    "appService.deploySubpath": "."
+}
